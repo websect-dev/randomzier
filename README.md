@@ -1,2 +1,2 @@
 # randozzier
-Random number generator written in TypeScript
+🎲 Random number generator written in TypeScript
