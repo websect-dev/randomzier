@@ -15,6 +15,8 @@ class Randozzier {
         this.step = 1
     }
 
+    readonly DIVIDER = new Date().getTime()
+
     /**
      * Generates random number.
      * @param start - left border of the bounded interval.
@@ -30,20 +32,13 @@ class Randozzier {
             this.step = step
         }
 
-        const DIVIDER = new Date().getTime()
-
-
         for (let iterator = this.start; iterator <= this.end; iterator += this.step) {
-            if (Math.round(DIVIDER / (iterator + Math.floor(Math.random() * this.step))) % 12 === 0) {
+            if (Math.round(this.DIVIDER / (iterator + Math.floor(Math.random() * this.step))) % 12 === 0) {
                 return iterator
             } 
-            // else {
-            //     return Math.floor(Math.random() * this.end)
-            // }
+            else {
+                return this.end - (Math.floor(Math.random() * 4) * this.step)
+            }
         }
     }
 }
-
-
-let zier = new Randozzier()
-console.log(zier.generate(1, 1000, 239));
