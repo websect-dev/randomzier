@@ -7,7 +7,7 @@ export class CustomException extends Error {
 }
 
 export function wrongInterval(start: number, end: number) {
-    if (start > end) throw new CustomException("Wrong inteval", "Left border is greater than a right border.")
+    if (start > end) throw new CustomException("Wrong interval", "Left border is greater than a right border.")
 }
 
 export function invalidArguments(start: number, end: number, step: number) {
