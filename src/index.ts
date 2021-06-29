@@ -4,7 +4,7 @@ interface IRandozzier {
     generate(start?: number, end?: number, step?: number): number
 }
 
-class Randozzier implements IRandozzier {
+export class Randozzier implements IRandozzier {
     constructor(private start?: number, private end?: number, private step?: number) {
         this.start = 1
         this.end = 100
@@ -45,3 +45,4 @@ class Randozzier implements IRandozzier {
         return arr[Math.floor(Math.random() * arr.length)]
     }
 }
+

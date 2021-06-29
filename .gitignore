@@ -5,7 +5,8 @@
 .LSOverride
 dist/
 /dist
-/lib
+\dist
+\node_modules
 node_modules
 
 # Icon must end with two \r
