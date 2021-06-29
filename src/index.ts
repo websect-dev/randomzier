@@ -7,8 +7,11 @@ const CONSTANTS = {
     HUGE: 100000
 }
 
+interface RandozzierValues {
+    generate(start?: number, end?: number, step?: number): number;
+}
 
-class Randozzier {
+class Randozzier implements RandozzierValues {
     constructor(private start?: number, private end?: number, private step?: number) {
         this.start = 0
         this.end = CONSTANTS.SMALL
