@@ -45,7 +45,3 @@ class Randozzier implements IRandozzier {
         return arr[Math.floor(Math.random() * arr.length)]
     }
 }
-
-
-const zier = new Randozzier()
-console.log(zier.generate(100, 200))
