@@ -1,17 +1,15 @@
 import { invalidArguments, wrongInterval } from "./exceptions"
 
-interface IRandozzier {
+interface IRandomzier {
     generate(start?: number, end?: number, step?: number): number
 }
 
-export class Randozzier implements IRandozzier {
-    constructor(private start?: number, private end?: number, private step?: number) {
-        this.start = 1
-        this.end = 100
-        this.step = 1
-    }
+export class Randomzier implements IRandomzier {
+    private start: number = 1
+    private end: number = 100
+    private step: number = 1
 
-    readonly DIVIDER = new Date().getTime()
+    constructor() {}
 
     /**
      * Generates random number.
@@ -21,7 +19,7 @@ export class Randozzier implements IRandozzier {
      * @note Empty argument list returns random argument from [0, 100] with the step of 1.
      */
 
-    generate(start?: number, end?: number, step?: number, options?: object): number {
+    generate(start?: number, end?: number, step?: number): number {
         if (start != undefined && end != undefined && step != undefined) {
             wrongInterval(start, end)
 
@@ -45,4 +43,3 @@ export class Randozzier implements IRandozzier {
         return arr[Math.floor(Math.random() * arr.length)]
     }
 }
-

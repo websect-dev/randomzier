@@ -11,6 +11,6 @@ export function wrongInterval(start: number, end: number) {
 }
 
 export function invalidArguments(start: number, end: number, step: number) {
-    if (start === undefined || end === undefined || step === undefined) 
+    if (!(start === undefined && end === undefined && step === undefined)) 
         throw new CustomException("Wrong arguments", `Invalid number of arguments. Expected ${arguments.length}.`)
 }

@@ -1,8 +1,9 @@
 {
-  "name": "randozzier",
-  "version": "1.0.9",
+  "name": "randomzier",
+  "version": "1.0.0",
   "description": "Random number generator",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -14,13 +15,13 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/websect-itmo/randozzier.git"
+    "url": "git+https://github.com/websect-itmo/randomzier.git"
   },
   "keywords": [],
   "author": "Alexander Miroshnichenko, Iskander Kudashev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/websect-itmo/randozzier/issues"
+    "url": "https://github.com/websect-itmo/randomzier/issues"
   },
-  "homepage": "https://github.com/websect-itmo/randozzier#readme"
+  "homepage": "https://github.com/websect-itmo/randomzier#readme"
 }
