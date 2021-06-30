@@ -1,6 +1,6 @@
 {
   "name": "randomzier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random number generator",
   "main": "dist/index.js",
   "module": "dist/index.js",
