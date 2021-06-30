@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/websect-itmo/assets/main/Randomzier.png?token=AIY5ZP33HDRXDXFNTFMMZU3A3RPSY">
+  <img src="https://raw.githubusercontent.com/websect-itmo/assets/main/Randomzier.png">
   <br>
   <strong>🎲 Random number generator written in TypeScript</strong>
 </p>
