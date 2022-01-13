@@ -1,6 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/websect-itmo/assets/main/Randomzier.png">
-  <br>
   <strong>🎲 Random number generator written in TypeScript</strong>
 </p>
 
@@ -11,7 +9,9 @@
 
 ## Installation
 
-`npm i randomzier`
+```shell
+npm i randomzier
+```
 
 ## Usage 
 ```js
